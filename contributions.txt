@@ -1,0 +1,95 @@
+Below the dashed line, for each group member, clearly specify which sections of 
+the code are predominantly your own original contributions, as described in
+the TP document: 
+https://www.cs.cmu.edu/~112/notes/term-project-and-hack112.html#personal-contributions
+
+Helene Vestrum
+- Helped make the background and images for the game 
+    (openingScreen, customerScreenNoCoffee, goodEnding, kosbieGone, 
+    milkChoice, openingScreen, sizeChoice)
+- Added Sound (sound.mp3)
+- Implemented opencv and mediapipe into game
+- Made handTracking.py to test out camera and x,y,z, coordinates and to 
+    understand opencv
+- Made classHands.py
+- Made class detectHand to import to main python game
+- Made findHandPour without the angles in detectHand
+- Made findHandStir in detectHand
+- Added main in detectHand from analyticsvidhya.com
+- Added class drawScreen for gameHelpers (drawCafe, drawCup, drawMilk, 
+    drawButtons, drawStartScreen, drawSyrup, goodEnding, badEnding, 
+    kosbieGone, gameOver) for main game screens
+- Implemented app.flagSyrup and app.flagMilk which will call on which 
+    function of opencv to call for the different parts of the game
+- Made main2, main2helper in detectHand class
+RedrawAll
+    - Added color palette to redrawall
+    - Made screenMode ‘cafe’
+    - Made screenMode ‘cupScreen’
+    - Made screenMode ‘milkScreen’
+    - Added screenMode ‘syrupScreen’ 
+    - Made screenMode ‘goodEnding’
+    - Made button Kitchen
+    - Made button (syrup, milk+temp, cup size) on screens
+    - Made text and its directions for each of the screens to tell how to play
+    - Created screenMode ‘milkScreen’ and ‘iced/hot’ buttons to image
+    - Created orderList to display on screen
+    - Added the orderList to screen of all other order screens
+onMousePress
+    - Created mouse press for buttons to bring to each screen 
+        (syrup, milk+temp, cup size)
+    - Created mouse press for kitchen
+    - Created mouse press for milk choice and 
+    - Created mouse press for temp choice
+    - Updated orderList[‘milk’] of dictionary from which milk was pressed
+    - Updated orderList[‘temp’] of dictionary from which temp was pressed
+
+Sanjitha Govindan
+- Wrote class OrderType, imported class into startingScreen.py
+- got API Key for Google Gemini lite model
+- Prompted gemini AI to generate customer’s response based on whether 
+    the barista (user) made the order correctly or incorrectly
+- Prompted gemini AI to generate customer’s order 
+- Added OrderList and Customer Order
+- Made resetApp(app) function
+- Made screenHelpers.py
+- Added class orderType to screenHelpers.py
+- Created makeOrderHelpers class and functions inside 
+    (clickOptionsMilk, clickOptionsSyrup, clickOptionsCupSize, clickOptionsTemp)
+- Created additionalButtons class and functions inside 
+    (clickEndGameButton, kitchenNavigationButton)
+- Created DrinkOrder class
+- Made getAngle function in classHands.py to determine angle of hand 
+    such that the milk is poured into the cup
+- Made helper functions for onMousePress
+- Changed main1, main1helper, and find angle functions in detectHand class
+- Implemented threading
+- Made startThreadDetection and stopThreadDetection and detectGestures
+- Added total price to ending screens
+Redraw All
+    - Made finishScreen (app.goodEnding, app.badEnding, app.kosbieGone)
+    - Made for loop to loop through orderList dictionary to update 
+        “order in progress” feature on syrup, cup, and milk screens
+    - Made end game button for syrup, cup, and milk screens
+    - Made buttons for startScreen (play, how to)
+    - Made game over screen
+    - Made howTo screen
+    - Made finishScreen
+onMousePress
+    - Buttons for ‘start’ and ‘how to’ on startScreen
+    - Imported OrderType class to use getOrder() function
+    - Added cupSize to dictionary based on which cup user presses 
+        (orderList[‘cupSize’])
+    - Added syrupChoice to dictionary based on which syrup user presses 
+        (orderList[‘cupSize’])
+    - End game button for when users want to quit the game midway through
+    - Added next buttons on goodEnding and badEnding screens
+    - Made next button on goodEnding restart the game so user can have a new 
+        customer to make orders for
+    - Made next button on badEnding take the user back to 
+
+Helene & Sanjitha (what we worked together on)
+Formatting of textboxes (drawRect, drawLabel) on cafe screen where 
+customer orders
+Went to professor Mikes OH where he introduced us to threading and sent us 
+python files to read about and look into to understand

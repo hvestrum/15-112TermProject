@@ -1,0 +1,33 @@
+Below the dashed line, include easily understandable and verifiable 
+citations to all the major sources you used for your project, as described
+in the TP document: 
+https://www.cs.cmu.edu/~112/notes/term-project-and-hack112.html#tp-policies
+
+In addition, your code must also include citations directly in the code that 
+make it clear where you use code that is partly or entirely not of your 
+original design, and what the source is for that code.
+------------------------------------>
+
+sound used from https://youtu.be/iPzmBKQVcjo?si=VbXt3iWHhox-qjNh, trimmed
+and converted into mp3 file
+
+Used ai.google.dev 
+and https://ai.google.dev/gemini-api/docs/quickstart?lang=python 
+on line 19 of Sprout Coffee.py for help with generating API key 
+for Google Gemini and importing module into code
+
+Referenced ChatGPT on line 337 for Sprout Coffee.py for tips on 
+text extraction from Gemini AI response
+
+Used Sorasora.com https://sora.com to generate template images to redesign and 
+edit for startScreen, customerScreen, gameOver_sproutCoffee, milkChoice, 
+OpeningScreen, sizeChoice, and syrupScreenImage.
+
+Used https://www.analyticsvidhya.com/blog/2021/07/building-a-hand-tracking-system-using-opencv/
+to learn about hand tracking in openCV and wrote classHands.py based on 
+the code references shown
+
+Used Sihab Sahariar's article on Medium for thread detection function adaption 
+https://tinyurl.com/multithreadinghelpfor15112tp as well as read through thread
+detection python material provided by professor Mike for all things related to
+threading
